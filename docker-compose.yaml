@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  airports:
+    image: airports:1.0.0
+    ports:
+      - "80:80"
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
